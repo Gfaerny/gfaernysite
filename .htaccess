@@ -1,4 +1,4 @@
-DirectoryIndex gfaernysite-master/index.html
+#DirectoryIndex gfaernysite-master/index.html
 RewriteEngine On
     # project's
 RewriteRule ^/programing-projects/clc$ /programing-projects/clc/index.html [L]
