@@ -1,0 +1,8 @@
+DirectoryIndex gfaernysite-master/index.html
+RewriteEngine On
+    # project's
+RewriteRule ^/programing-projects/clc$ /programing-projects/clc/index.html [L]
+RewriteRule ^/programing-projects/tng$ /programing-projects/tng/index.html [L]
+    # Dir
+RewriteRule ^/sound-projects$ /sound-projects/index.html [L]
+RewriteRule ^/programing-projects$ /programing-projects/index.html [L]
