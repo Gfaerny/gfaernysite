@@ -120,7 +120,16 @@
     height: auto;
     display: block;  
   }
+
+  .wrap {
+    width: min(100%, 800px);
+    margin: 0 auto;
+  }
+
+
+
   </style>
+  
 </head>
 <body>
   <div class="container">
@@ -135,16 +144,19 @@
         <a href = "https://soundcloud.com/gfaerny">Soundcloud</a>
       </p>
     </header>
-
+  </div>
 <main>
 
-
+  
     <section aria-labelledby = "clc">
         <h2 id="clc">clc</h2>
         <!-- about clc -->
 
+        <div class = "wrap">
         <p>
         clc is super simple time counter using sfml library
-        <img src="clc.png" alt="clc screenshot">
+        <img class="responsive" src="clc.png" alt="clc screenshot">
         </p>
+        </div>
+
 </main>
