@@ -1,0 +1,107 @@
+ /* Simple reset */
+    *,*::before,*::after { box-sizing: border-box; }
+
+    html,body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #000;               /* Black background */
+      color: #e6e6e6;                 /* Light text */
+      font-family: ui-monospace, "SFMono-Regular", Menlo, Monaco, "Roboto Mono", monospace;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 36px;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: 30px;
+      color: #ffffff;
+      letter-spacing: 0.2px;
+    }
+
+    h1 a {
+        color: white;
+        text-decoration: none;
+    }
+    h1 a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+    .meta {
+      margin: 0;
+      color: #bfbfbf;
+      font-size: 14px;
+    }
+
+    h2 {
+      margin: 28px 0 8px 0;
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 8px 0;
+      padding: 6px 0;
+      border-bottom: 1px dashed rgba(255,255,255,0.04);
+    }
+
+    .muted {
+      color: #9a9a9a;
+      font-size: 13px;
+    }
+
+    a {
+      color: #64b5ff;
+      text-decoration: none;
+    }
+
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+
+    .date { color: #a6d1ff; margin-left: 8px; font-size: 13px; }
+
+    /* Responsive design */
+    @media (max-width: 560px) {
+      body { padding: 20px; }
+      h1 { font-size: 24px; }
+    }
+
+    /* Optional button style for contact */
+    .contact {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.03);
+      color: #dfefff;
+      text-decoration: none;
+      font-size: 13px;
+    }
