@@ -102,3 +102,23 @@
       text-decoration: none;
       font-size: 13px;
     }
+
+    img.responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;  
+  }
+
+  .wrap {
+    max-width:900px;
+/*  width: min(100%, 800px);*/
+    margin: 0 auto;
+    
+  }
+
+
+
+
+    h3 {
+        color: green;      
+    }
