@@ -16,7 +16,6 @@
       padding: 36px;
     }
 
-    /* Main container */
     .container {
       max-width: 900px;
       margin: 0 auto;
@@ -115,9 +114,9 @@
     margin: 0 auto;
     
   }
-
-
-
+    p1{
+      color: white;
+    }
 
     h3 {
         color: green;      

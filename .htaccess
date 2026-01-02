@@ -7,7 +7,8 @@ RewriteRule ^/programing-projects/tng$ /programing-projects/tng/index.html [L]
 RewriteRule ^/sound-projects$ /sound-projects/index.html [L]
 RewriteRule ^/programing-projects$ /programing-projects/index.html [L]
 
-
+    # resume
+RewriteRuls ^/resume$ /resume/index2.html [L]
 
     #add vcvpatch file
 #RewriteRule ^vcvPatch/(.*)$ /home/gfaern/vcvPatch/$1 [L]
