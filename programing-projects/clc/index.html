@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-<!--  <link rel="stylesheet" href="../../css/styles.css">-->
+  <!--  <link rel="stylesheet" href="../../css/styles.css">-->
 
   <style>
-  
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 
- *,*::before,*::after { box-sizing: border-box; }
-
-    html,body {
+    html,
+    body {
       height: 100%;
       margin: 0;
       padding: 0;
     }
 
     body {
-      background: #000;               /* Black background */
-      color: #e6e6e6;                 /* Light text */
+      background: #000;
+      /* Black background */
+      color: #e6e6e6;
+      /* Light text */
       font-family: ui-monospace, "SFMono-Regular", Menlo, Monaco, "Roboto Mono", monospace;
       line-height: 1.55;
       -webkit-font-smoothing: antialiased;
@@ -44,12 +50,13 @@
     }
 
     h1 a {
-        color: white;
-        text-decoration: none;
+      color: white;
+      text-decoration: none;
     }
+
     h1 a:hover {
-        color: white;
-        text-decoration: none;
+      color: white;
+      text-decoration: none;
     }
 
     .meta {
@@ -75,7 +82,7 @@
     li {
       margin: 8px 0;
       padding: 6px 0;
-      border-bottom: 1px dashed rgba(255,255,255,0.04);
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.04);
     }
 
     .muted {
@@ -88,16 +95,26 @@
       text-decoration: none;
     }
 
-    a:hover, a:focus {
+    a:hover,
+    a:focus {
       text-decoration: underline;
     }
 
-    .date { color: #a6d1ff; margin-left: 8px; font-size: 13px; }
+    .date {
+      color: #a6d1ff;
+      margin-left: 8px;
+      font-size: 13px;
+    }
 
     /* Responsive design */
     @media (max-width: 560px) {
-      body { padding: 20px; }
-      h1 { font-size: 24px; }
+      body {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
     }
 
     /* Optional button style for contact */
@@ -106,88 +123,95 @@
       margin-top: 10px;
       padding: 6px 10px;
       border-radius: 6px;
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.03);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.03);
       color: #dfefff;
       text-decoration: none;
       font-size: 13px;
     }
 
     img.responsive {
-    max-width: 100%;
-    height: auto;
-    display: block;  
-  }
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
-  .wrap {
-    max-width:900px;
- /*   width: min(100%, 800px);*/
-    margin: 0 auto;
-    
-  }
+    .wrap {
+      max-width: 900px;
+      /*   width: min(100%, 800px);*/
+      margin: 0 auto;
 
-
-
-
-    h3 {
-        color: green;      
     }
 
 
 
 
+    h3 {
+      color: green;
+    }
   </style>
 
   <title>gfaerny</title>
-  
+
 </head>
+
 <body>
   <div class="container">
 
     <header>
-      <h1><a href = "https://gfaerny.me">gfaerny</a></h1>
+      <h1><a href="https://gfaerny.me">gfaerny</a></h1>
       <p class="meta">
         Email:
         <a href="mailto:mail@gfaerny.me">mail@gfaerny.me</a><br>
-        <a href= "https://gfaerny.bandcamp.com">Bandcamp</a> —
-        <a href = "https://github.com/gfaerny/">Github</a> —
-        <a href = "https://soundcloud.com/gfaerny">Soundcloud</a>
+        <a href="https://gfaerny.bandcamp.com">Bandcamp</a> —
+        <a href="https://github.com/gfaerny/">Github</a> —
+        <a href="https://soundcloud.com/gfaerny">Soundcloud</a>
       </p>
     </header>
   </div>
-<main>
+  <main>
 
-  
-        <!-- about clc -->
-  <div class = "wrap">
-        
+
+    <!-- about clc -->
+    <div class="wrap">
+
       <h2>clc. about</h2>
       <h3>STATUS : RELEASED</h3>
       <p>
-      clc. is super simple time counter using RGFW windowing framework and Glyph for rendering text with OpenGL.
-        <br/>
-         clc. feature :
-         <br>
-         ├── restore last time data after restart
-         <br>
-         ├── easy to contribute and getting in touch we project
-         <br>
-         └── fast , minimal
+        clc. is super simple time counter using RGFW windowing framework and Glyph for rendering text with OpenGL.
+        <br />
+        currently clc project use bash script to get dependency for build in debian-base linux, and then use Cmake for
+        building.
+        <br>
+
+        clc. feature :
+        <br>
+        ├── restore last time data after restart
+        <br>
+        ├── easy to contribute and getting in touch we project
+        <br>
+        └── fast , minimal
 
       <h2>contribute ⧓ report</h2>
       <p>
-        it's very joyable for me that if you have issues , suggestion ⧓ or report while using clc to reach this address's :
+
+        it's very joyable for me that if you have issues , suggestion ⧓ or report while using clc to reach this
+        address's :
         <br>
-        <a href = "https://lists.sr.ht/~gfaerny/clc._mailing_list">clc mailing list in source hut</a>
+
+
+
+        <a href="https://lists.sr.ht/~gfaerny/clc._mailing_list">clc mailing list in source hut</a>
         <br>
-        <a href = "https://todo.sr.ht/~gfaerny/clc-todo">clc todo list also in source hut</a>
+        <a href="https://todo.sr.ht/~gfaerny/clc-todo">clc todo list also in source hut</a>
         <br>
-        <a href = "https://github.com/Gfaerny/clc."">clc github repository in github</a> 
-      <img class="responsive" src="clc.png" alt="clc screenshot">
+        <a href="https://github.com/Gfaerny/clc."">clc github repository in github</a> 
+      <img class=" responsive" src="clc.png" alt="clc screenshot">
 
       </p>
-      </div>
+    </div>
 
-</main>
+  </main>
 </body>
+
 </html>
