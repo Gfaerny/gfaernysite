@@ -1,0 +1,9 @@
+How we use git version control for .vcv file
+
+```
+mv Example.vcv Example.tar.gz
+mkdir Example
+tar -xzvf Example.tar.gz -C Example
+```
+
+now we have Example folder that contian vcv json file and modules folder
