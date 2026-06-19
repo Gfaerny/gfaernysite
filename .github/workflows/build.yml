@@ -26,7 +26,7 @@ jobs:
         run: python3 build.py
 
       - name: Create archive
-        uses: action/upload-artifacts
+        uses: action/upload-artifacts@v7
         with:
             name: Upload tar.xz
             path: gfaerny.tar.xz          
