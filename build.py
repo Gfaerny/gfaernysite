@@ -113,7 +113,7 @@ def copy_src_to_build() -> None:
     if os.path.exists(BUILD_DIR):
         shutil.rmtree(BUILD_DIR)
 
-    shutil.copytree(SRC_DIR, BUILD_DIR)
+    shutil.copytree(SRC_DIR, BUILD_DIR, ignore=None)
 
 
 def process_build_tree() -> None:
