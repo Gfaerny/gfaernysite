@@ -7,7 +7,6 @@ import os
 import shutil
 import tempfile
 import subprocess
-import sys
 
 MARKER = "<!-- Added automatrcally by build.sh script-->"
 SRC_DIR = "src"
