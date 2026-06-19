@@ -30,3 +30,8 @@ jobs:
         with:
             name: Upload tar.xz
             path: gfaerny.tar.xz          
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: gfaerny.tar.xz
