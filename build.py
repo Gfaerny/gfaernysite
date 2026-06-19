@@ -6,7 +6,8 @@ from __future__ import annotations
 import os
 import shutil
 import tempfile
-
+import subprocess
+import sys
 
 MARKER = "<!-- Added automatrcally by build.sh script-->"
 SRC_DIR = "src"
@@ -123,9 +124,14 @@ def process_build_tree() -> None:
             process_index_file(index_file)
 
 
+def build_archive() -> None:
+    subprocess.run("tar cf - build/ | xz -z - > gfaernysite.tar.xz", shell=True, executable="/bin/bash")
+
+
 def main() -> int:
     copy_src_to_build()
     process_build_tree()
+    build_archive()
     return 0
 
 

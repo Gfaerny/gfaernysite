@@ -1,4 +1,4 @@
-name: build
+name: Build
 
 on:
   push:
@@ -14,37 +14,19 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Install dependency
         run: |
           sudo apt update
           sudo apt install -y python3
 
-      - name: Build
+      - name: Run python build script
         run: python3 build.py
 
-      - name: Set archive name
-        if: startsWith(github.ref, 'refs/tags/')
-        run: |
-          echo "BUILD_DATE=$(date +%F)" >> "$GITHUB_ENV"
-          echo "ARCHIVE_NAME=gfaernysite-$(date +%F).tar.gz" >> "$GITHUB_ENV"
-
       - name: Create archive
-        if: startsWith(github.ref, 'refs/tags/')
-        run: |
-          test -d build
-          tar -C build -czf "$ARCHIVE_NAME" .
-
-      - name: Create GitHub Release
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v2
+        use: action/upload-artifacts
         with:
-          files: |
-            ${{ env.ARCHIVE_NAME }}
-          name: Build ${{ env.BUILD_DATE }}
-          generate_release_notes: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            name: Upload tar.xz
+            path: gfaerny.tar.xz          
