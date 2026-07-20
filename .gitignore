@@ -1,3 +1,4 @@
 .taskrc
 .taskwarrior/*
 build/*
+*.tar.xz

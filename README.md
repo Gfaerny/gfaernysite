@@ -1,10 +1,9 @@
-#gfaernysite source code repository
+# gfaernysite source code repository
 
 please feel free to contribute in term of todo list or what you looking for.
 # Build
 gfaernysite get build to build/ directory with python script
-```
-#For who use python3
+```bash
 python3 build.py
 ```
 
