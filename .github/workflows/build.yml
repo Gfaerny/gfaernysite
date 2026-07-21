@@ -15,7 +15,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.2.2
       
       - name: Install dependency
         run: |
@@ -26,13 +26,13 @@ jobs:
         run: python3 build.py
 
       - name: Create archive
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.4.3
         with:
             name: Upload tar.xz
             path: gfaerny.tar.xz          
         
       - name: Create Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v2.2.0
         with:
           files: gfaernysite.tar.xz
 
