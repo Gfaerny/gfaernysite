@@ -59,7 +59,7 @@ def process_index_file(index_file: str) -> None:
   <body>
     <div class="container">
       <header>
-        <h1><a href="https://gfaerny.cc">gfaerny</a></h1>
+        <h1><a href="https://gfaerny.cc">gf↝</a></h1>
         <p class="meta">
           Email:
           <a href="mailto:me@gfaerny.cc">me@gfaerny.cc</a><br>
